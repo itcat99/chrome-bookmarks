@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+
+  "name": "new bookmarks",
+  "description": "This is a bookmark app to replace the original bookmark.",
+  "version": "0.0.1",
+  "author": "FreMaNgo",
+  "permissions": ["tabs", "storage", "bookmarks", "contextMenus"],
+  "omnibox": { "keyword": "rua" },
+  "browser_action": {
+    "default_title": "new bookmarks",
+    "default_popup": "./bookmark.html"
+  },
+  "chrome_url_overrides": {
+    "bookmarks": "./bookmark.html"
+  },
+  "icons": {
+    "16": "./images/search.png"
+  }
+}
